@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --bijela:hsl(0, 0%, 100%);
+    --svjSiva:hsl(212, 45%, 89%);
+    --sivoPlava:hsl(220, 15%, 55%);
+    --tamnoPlava:hsl(218, 44%, 22%);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--svjSiva);
+}
+.main{
+    max-width: 18rem;
+    text-align: center;
+    background-color: var(--bijela);
+    padding: 1.2rem;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.main img{
+    width: 100%;
+    border-radius: .75rem;
+}
+.main h1{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--tamnoPlava);
+    font-size: 20px;
+}
+.main p{
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--sivoPlava);
+}
+
+@media screen and (min-width: 376px) {
+    .main{
+        max-width: 18rem;
+    }
+}
